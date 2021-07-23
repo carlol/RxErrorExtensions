@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion project.compileSdkVersion
 
     defaultConfig {
+        minSdkVersion project.minSdkVersion
+        targetSdkVersion project.targetSdkVersion
         applicationId "com.example.android.rxerrorextensions"
-        minSdkVersion 21
-        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
